@@ -1,0 +1,10 @@
+^C:\LIVNMACRO\LIVN-MACRO\BUILD\CMAKEFILES\D65F124E910F375F1B2678B76D7D538F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/LivnMacro/livn-macro -BC:/LivnMacro/livn-macro/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/LivnMacro/livn-macro/build/LivnMacro.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
