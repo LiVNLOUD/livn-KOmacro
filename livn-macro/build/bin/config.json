@@ -1,0 +1,199 @@
+{
+  "version": "4.1",
+  "system": {
+    "target_exe": "KnightOnLine.exe",
+    "driver_mode": "interception",
+    "humanize": true,
+    "jitter_ms": 5,
+    "background_input": false,
+    "roi_debug": false
+  },
+  "calibration": {
+    "party_bar":    { "x": 0, "y": 0, "w": 0, "h": 0, "calibrated": false },
+    "buff_bar":     { "x": 0, "y": 0, "w": 0, "h": 0, "calibrated": false },
+    "hp_bar":       { "x": 0, "y": 0, "w": 0, "h": 0, "calibrated": false },
+    "mp_bar":       { "x": 0, "y": 0, "w": 0, "h": 0, "calibrated": false },
+    "skill_bar":    { "x": 0, "y": 0, "w": 0, "h": 0, "calibrated": false },
+    "chat_area":    { "x": 0, "y": 0, "w": 0, "h": 0, "calibrated": false },
+    "weapon_break": { "x": 0, "y": 0, "w": 0, "h": 0, "calibrated": false }
+  },
+  "positions": {
+    "shield":  { "x": 0, "y": 0, "recorded": false, "shortcut": "F12" },
+    "restore": { "x": 0, "y": 0, "recorded": false, "shortcut": "F10" }
+  },
+  "mage": {
+    "staff_combo": {
+      "enabled": true,
+      "shortcut": "CapsLock",
+      "mode": "hold",
+      "delay_ms": 300
+    },
+    "nova": {
+      "enabled": true,
+      "shortcut": "F9",
+      "mode": "hold",
+      "delay_ms": 300,
+      "skills": [
+        { "f_tab": "F1", "slot": "1" },
+        { "f_tab": "F1", "slot": "2" },
+        { "f_tab": "F1", "slot": "3" }
+      ]
+    },
+    "visual_farm": {
+      "enabled": false,
+      "target_mob": "Keilan",
+      "spam_skill": { "f_tab": "F1", "slot": "4" }
+    },
+    "smart_tp": {
+      "enabled": true,
+      "hp_threshold": 30,
+      "chat_tp": true,
+      "skill": { "f_tab": "F2", "slot": "5" },
+      "order": "5,7,8"
+    }
+  },
+  "priest": {
+    "bp_attack": {
+      "enabled": false,
+      "shortcut": "CapsLock",
+      "mode": "hold",
+      "attack_skill": { "f_tab": "F1", "slot": "2" },
+      "delay_ms": 300,
+      "kitap": { "f_tab": "F2", "slot": "4" },
+      "kol":   { "f_tab": "F2", "slot": "5" }
+    },
+    "heal": {
+      "enabled": true,
+      "single": { "f_tab": "F1", "slot": "3" },
+      "group":  { "f_tab": "F1", "slot": "4" },
+      "single_threshold": 60,
+      "group_threshold": 40
+    },
+    "buffs": [
+      { "f_tab": "F2", "slot": "1" },
+      { "f_tab": "F2", "slot": "2" }
+    ],
+    "cure": {
+      "enabled": true,
+      "skill": { "f_tab": "F3", "slot": "1" }
+    }
+  },
+  "rogue": {
+    "vs_combo": {
+      "enabled": false,
+      "shortcut": "CapsLock",
+      "mode": "hold",
+      "minor": { "f_tab": "F1", "slot": "1" },
+      "skills": [
+        { "f_tab": "F1", "slot": "3" },
+        { "f_tab": "F1", "slot": "4" },
+        { "f_tab": "F1", "slot": "5" }
+      ],
+      "delay_ms": 300,
+      "auto_lf": true,
+      "lf_skill": { "f_tab": "F2", "slot": "1" }
+    },
+    "slide_35": {
+      "enabled": false,
+      "shortcut": "F9",
+      "mode": "hold",
+      "ok3": { "f_tab": "F1", "slot": "3" },
+      "ok5": { "f_tab": "F1", "slot": "5" },
+      "delay_ms": 300
+    },
+    "skill_combo": {
+      "enabled": false,
+      "shortcut": "F10",
+      "mode": "hold",
+      "skills": [
+        { "f_tab": "F2", "slot": "5" },
+        { "f_tab": "F2", "slot": "6" },
+        { "f_tab": "F2", "slot": "7" }
+      ],
+      "delay_ms": 300
+    },
+    "auto_def": {
+      "enabled": true,
+      "skill": { "f_tab": "F2", "slot": "3" }
+    },
+    "skill_72": {
+      "enabled": true,
+      "skill_7": { "f_tab": "F1", "slot": "7" },
+      "skill_2": { "f_tab": "F1", "slot": "2" }
+    },
+    "other_skills": [
+      { "f_tab": "F3", "slot": "2", "label": "Knife" },
+      { "f_tab": "F3", "slot": "4", "label": "M20" },
+      { "f_tab": "F4", "slot": "1", "label": "Cure" },
+      { "f_tab": "F3", "slot": "5", "label": "Magic Shield" }
+    ]
+  },
+  "warrior": {
+    "des_combo": {
+      "enabled": true,
+      "shortcut": "CapsLock",
+      "mode": "toggle",
+      "descent": { "f_tab": "F1", "slot": "5" },
+      "ground_skills": [
+        { "f_tab": "F2", "slot": "3" },
+        { "f_tab": "F2", "slot": "4" },
+        { "f_tab": "F2", "slot": "5" },
+        { "f_tab": "F2", "slot": "6" }
+      ],
+      "delay_ms": 300
+    },
+    "serial_attack": {
+      "enabled": false,
+      "shortcut": "F9",
+      "mode": "hold",
+      "skill": { "f_tab": "F1", "slot": "3" },
+      "delay_ms": 300
+    },
+    "shield_spam": {
+      "enabled": true,
+      "shortcut": "F10",
+      "mode": "hold"
+    },
+    "firfir": {
+      "enabled": true,
+      "shortcut": "Q",
+      "mode": "toggle"
+    },
+    "debuff_cleanse": {
+      "enabled": true
+    },
+    "buff_tracking": {
+      "kafa":       { "f_tab": "F3", "slot": "1" },
+      "kilic":      { "f_tab": "F3", "slot": "2" },
+      "kol":        { "f_tab": "F3", "slot": "3" },
+      "hp_booster": { "f_tab": "F3", "slot": "4" }
+    }
+  },
+  "extra": {
+    "smart_hp_mp": {
+      "enabled": true,
+      "hp_pot": { "f_tab": "F1", "slot": "0" },
+      "mp_pot": { "f_tab": "F1", "slot": "9" },
+      "hp_threshold": 50,
+      "mp_threshold": 30
+    },
+    "auto_farm": {
+      "enabled": false,
+      "shortcut": "F11",
+      "mode": "toggle"
+    },
+    "magic_hammer": {
+      "enabled": true,
+      "skill": { "f_tab": "F4", "slot": "1" }
+    },
+    "duration": {
+      "enabled": false,
+      "skills": [
+        { "f_tab": "F2", "slot": "1" }
+      ]
+    },
+    "hud": {
+      "enabled": true
+    }
+  }
+}

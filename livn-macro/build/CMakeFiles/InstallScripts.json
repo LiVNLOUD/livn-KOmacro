@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/LivnMacro/livn-macro/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,4 @@
+C:/LivnMacro/livn-macro/build/CMakeFiles/LivnMacro.dir
+C:/LivnMacro/livn-macro/build/CMakeFiles/Calibrator.dir
+C:/LivnMacro/livn-macro/build/CMakeFiles/ALL_BUILD.dir
+C:/LivnMacro/livn-macro/build/CMakeFiles/ZERO_CHECK.dir
